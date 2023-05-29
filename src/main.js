@@ -17,6 +17,15 @@ let initialY;
 ctx.fillStyle = CANVAS_COLOR;
 ctx.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
 
+class L2 {
+  static className = "L2";
+
+  constructor(config) {
+    return tf.regularizers.l1l2(config);
+  }
+}
+tf.serialization.registerClass(L2);
+
 const dibujar = (cursorX, cursorY) => {
   ctx.beginPath();
   ctx.moveTo(initialX, initialY);
@@ -76,7 +85,6 @@ btnCleanCanvas.addEventListener("click", cleanCanvas);
 btnIdentifyImg.addEventListener("click", downloadCanvas);
 
 let modelo;
-
 (async () => {
   console.log("Cargando modelo...");
   modelo = await tf.loadLayersModel("./iaModel/model.json");
