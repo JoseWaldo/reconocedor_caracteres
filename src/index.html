@@ -4,29 +4,40 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="#" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Reconocedor de Caracteres</title>
   </head>
   <body>
-    <h1>Reconocedor de Caracteres</h1>
-    <main>
-      <section class="wrapper_canvas">
+    <header class="header">
+      <h1 class="header__title">Reconocedor de Caracteres</h1>
+      <a class="header__cta btn" href="https://github.com/JoseWaldo/reconocedor_caracteres" target="_blank">Ir al repositorio</a>
+    </header>
+    <main class="main">
+      <section class="main__wrapper_canvas">
         <canvas id="canvas" class="canvas" width="300" height="200"></canvas>
         <canvas id="canvasSmall" class="canvasSmall" width="128" height="128"></canvas>
       </section>
-      <section>
-        <button id="btnIdentifyImg">Identificar Carácter</button>
-        <button id="btnCleanCanvas">Limpiar</button>
+      <section class="main__btns">
+        <button class="btnIdentifyImg btn" id="btnIdentifyImg">Identificar Carácter</button>
+        <button class="btnCleanCanvas btn" id="btnCleanCanvas">Limpiar</button>
       </section>
     </main>
-    <footer>
-      <p>Proyecto Creado por Estudiantes de la Universidad de Antioquia</p>
-      <ul>
-        <li>Camilo Avandaño</li>
-        <li>John Rodriguez</li>
-        <li>Daniel Tabares</li>
-        <li>Jose Waldo</li>
-      </ul>
+    <footer class="footer">
+      <figure class="footer__wrapperImg">
+        <img class="footer__img" src="./img/logo.png" alt="Logo de la Universidad de Antioquia">
+      </figure>
+      <section class="footer__descp">
+        <h3>Proyecto Creado por Estudiantes de la Universidad de Antioquia</h3>
+        <ul>
+          <li>Camilo Avandaño</li>
+          <li>John Rodriguez</li>
+          <li>Daniel Tabares</li>
+          <li>Jose Waldo</li>
+        </ul>
+      </section>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"> </script>
