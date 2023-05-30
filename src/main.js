@@ -139,7 +139,7 @@ const downloadCanvas = (e) => {
   resample_single(canvas, 128, 128, canvasSmall);
   const link = document.createElement("a");
   link.href = canvasSmall.toDataURL(); // Obtener la imagen en formato base64 desde el canvas
-  link.download = "canvas_image.jpg"; // Nombre del archivo de descarga
+  link.download = "canvas_image.png"; // Nombre del archivo de descarga
   link.click();
 };
 
