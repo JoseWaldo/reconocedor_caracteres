@@ -77,10 +77,11 @@ body {
 .footer {
   position: absolute;
   width: 100%;
-  padding: 1rem;
+  padding: .5rem;
   background-color: #43b649;
   color: white;
   bottom: 0;
+  font-size: .8rem;
   display: flex;
   justify-content: center;
   align-items: center;
